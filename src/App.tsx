@@ -40,3 +40,54 @@ const App: React.FC = () => {
 };
 
 export default App;
+// import React from 'react';
+// import { Provider } from 'react-redux';
+// import { store } from './store';
+// import { Header } from './components/Header';
+// import { Login } from './components/login';
+// import { PostsList } from './components/PostsList';
+// import { CreatePost } from './components/CreatePosts';
+// import { Notifications } from './components/Notifications';
+// import './App.css';
+
+// const App: React.FC = () => {
+//   const [activeTab, setActiveTab] = React.useState<'posts' | 'create' | 'login'>('posts');
+  
+//   return (
+//     <Provider store={store}>
+//       <div className="app">
+//         <Header />
+//         <Notifications />
+        
+//         <div className="app-tabs">
+//           <button 
+//             className={activeTab === 'posts' ? 'active' : ''} 
+//             onClick={() => setActiveTab('posts')}
+//           >
+//             Posts
+//           </button>
+//           <button 
+//             className={activeTab === 'create' ? 'active' : ''} 
+//             onClick={() => setActiveTab('create')}
+//           >
+//             Create Post
+//           </button>
+//           <button 
+//             className={activeTab === 'login' ? 'active' : ''} 
+//             onClick={() => setActiveTab('login')}
+//           >
+//             Login
+//           </button>
+//         </div>
+        
+//         <main className="app-content">
+//           {activeTab === 'posts' && <PostsList />}
+//           {activeTab === 'create' && <CreatePost />}
+//           {activeTab === 'login' && <Login />}
+//         </main>
+//       </div>
+//     </Provider>
+//   );
+// };
+
+// export default App;
